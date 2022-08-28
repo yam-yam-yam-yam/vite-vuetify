@@ -98,13 +98,82 @@
             variant="plain"        
         </v-alert>
     </v-card>
+    <v-card class="pa-4 ma-4 elevation-24">
+        <v-alert
+            class="my-2"
+            closable
+        >
+            <template v-slot:append>
+                v-slot:apeend
+            </template>
+            <template v-slot:prepend>
+                v-slot:prepend
+            </template>
+            <template v-slot:close>
+                <v-icon icon="mdi-firework"></v-icon>
+            </template>
+            Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Vivamus quis mi. Quisque ut nisi. Maecenas malesuada.
+        </v-alert>
+    </v-card>
+    <v-card class="pa-4 ma-4 elevation-24">
+        <v-alert
+            class="my-2"
+            closable
+            v-model="close"
+        >
+            Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Vivamus quis mi. Quisque ut nisi. Maecenas malesuada.
+        </v-alert>
+        <v-btn class="my-2" @click="close=!close">버튼</v-btn>
+        <p>v-model="close"</p>
+    </v-card>
+    <v-card class="pa-4 ma-4 elevation-24">
+        <v-alert
+            color="blue-grey-darken-4 my-2"
+            icon="mdi-firework"
+            variant="elevated"
+            density="comportable"
+            closable
+        >
+            Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Vivamus quis mi. Quisque ut nisi. Maecenas malesuada.
+        </v-alert>
+        <v-alert
+            color="blue-grey-darken-4 my-2"
+            icon="mdi-firework"
+            variant="tonal"
+            density="comportable"
+            closable
+        >
+            Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Vivamus quis mi. Quisque ut nisi. Maecenas malesuada.
+        </v-alert>
+        <v-alert
+            color="light-blue-accent-2 my-2"
+            icon="mdi-firework"
+            variant="tonal"
+            density="comportable"
+            border
+            closable
+        >
+            Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Vivamus quis mi. Quisque ut nisi. Maecenas malesuada.
+        </v-alert>
+        <v-alert
+            color="pink-darken-1 my-2"
+            icon="mdi-firework"
+            variant="flat"
+            density="comportable"
+            border="end"
+            closable
+        >
+            Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Vivamus quis mi. Quisque ut nisi. Maecenas malesuada.
+        </v-alert>
+        <p>예제</p>
+    </v-card>
 </template>
 
 <script>
 export default {
     data() {
         return {
-            
+            close:true
         }
     },
 }
