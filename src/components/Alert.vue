@@ -5,8 +5,8 @@
             border
             border-color="red"
             closable
-            close-icon="mdi-checkbox-marked-circle"
-            icon="mdi-firework"
+            close-icon="fas fa-home"
+            icon="fas fa-home"
         >
             Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Vivamus quis mi. Quisque ut nisi. Maecenas malesuada.
         </v-alert>
@@ -43,7 +43,7 @@
         <v-alert
             class="my-2"
             prominent
-            icon="mdi-firework"
+            icon="fas fa-home"
             max-width="500"
             max-height="500"
             position="relative"
@@ -110,7 +110,7 @@
                 v-slot:prepend
             </template>
             <template v-slot:close>
-                <v-icon icon="mdi-firework"></v-icon>
+                <v-icon icon="fas fa-home"></v-icon>
             </template>
             Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Vivamus quis mi. Quisque ut nisi. Maecenas malesuada.
         </v-alert>
@@ -129,7 +129,7 @@
     <v-card class="pa-4 ma-4 elevation-24">
         <v-alert
             color="blue-grey-darken-4 my-2"
-            icon="mdi-firework"
+            icon="fa-solid fa-fire"
             variant="elevated"
             density="comportable"
             closable
@@ -138,7 +138,7 @@
         </v-alert>
         <v-alert
             color="blue-grey-darken-4 my-2"
-            icon="mdi-firework"
+            icon="fa-solid fa-fire"
             variant="tonal"
             density="comportable"
             closable
@@ -147,7 +147,7 @@
         </v-alert>
         <v-alert
             color="light-blue-accent-2 my-2"
-            icon="mdi-firework"
+            icon="fa-solid fa-fire"
             variant="tonal"
             density="comportable"
             border
@@ -157,7 +157,7 @@
         </v-alert>
         <v-alert
             color="pink-darken-1 my-2"
-            icon="mdi-firework"
+            icon="fa-solid fa-fire"
             variant="flat"
             density="comportable"
             border="end"
