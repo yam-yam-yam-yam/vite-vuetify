@@ -7,6 +7,8 @@
       >
         <v-tab :value="0">alert</v-tab>
         <v-tab :value="1">appBar</v-tab>
+        <v-tab :value="2" disabled>avatar</v-tab>
+        <v-tab :value="3">badge</v-tab>
       </v-tabs>
       <v-window v-model="menus">
         <v-window-item :value="0">
@@ -14,6 +16,12 @@
         </v-window-item>
         <v-window-item :value="1">
           <AppbarComponent/>
+        </v-window-item>
+        <v-window-item :value="2">
+          <AvatarComponent/>
+        </v-window-item>
+        <v-window-item :value="3">
+          <BadgeComponent/>
         </v-window-item>
       </v-window>
     </v-main>
@@ -23,11 +31,15 @@
 <script>
 import AlertComponent from './components/Alert.vue'
 import AppbarComponent from './components/Appbar.vue'
+import AvatarComponent from './components/Avatar.vue'
+import BadgeComponent from './components/Badge.vue'
 
 export default {
   components: {
     AlertComponent,
-    AppbarComponent
+    AppbarComponent,
+    AvatarComponent,
+    BadgeComponent
   },
 
   data() {
