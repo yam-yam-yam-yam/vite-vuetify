@@ -10,6 +10,7 @@
         <v-tab :value="2" disabled>avatar</v-tab>
         <v-tab :value="3">badge</v-tab>
         <v-tab :value="4">btn</v-tab>
+        <v-tab :value="5">card</v-tab>
       </v-tabs>
       <v-window v-model="menus">
         <v-window-item :value="0">
@@ -27,6 +28,9 @@
         <v-window-item :value="4">
           <ButtonComponent/>
         </v-window-item>
+        <v-window-item :value="5">
+          <CardComponent/>
+        </v-window-item>
       </v-window>
     </v-main>
   </v-app>
@@ -38,6 +42,7 @@ import AppbarComponent from './components/Appbar.vue'
 import AvatarComponent from './components/Avatar.vue'
 import BadgeComponent from './components/Badge.vue'
 import ButtonComponent from './components/Button.vue'
+import CardComponent from './components/Card.vue'
 
 export default {
   components: {
@@ -45,7 +50,8 @@ export default {
     AppbarComponent,
     AvatarComponent,
     BadgeComponent,
-    ButtonComponent
+    ButtonComponent,
+    CardComponent
   },
 
   data() {
