@@ -11,6 +11,7 @@
         <v-tab :value="3">badge</v-tab>
         <v-tab :value="4">btn</v-tab>
         <v-tab :value="5">card</v-tab>
+        <v-tab :value="6">chip</v-tab>
       </v-tabs>
       <v-window v-model="menus">
         <v-window-item :value="0">
@@ -31,6 +32,9 @@
         <v-window-item :value="5">
           <CardComponent/>
         </v-window-item>
+        <v-window-item :value="6">
+          <ChipComponent/>
+        </v-window-item>
       </v-window>
     </v-main>
   </v-app>
@@ -43,6 +47,7 @@ import AvatarComponent from './components/Avatar.vue'
 import BadgeComponent from './components/Badge.vue'
 import ButtonComponent from './components/Button.vue'
 import CardComponent from './components/Card.vue'
+import ChipComponent from './components/Chip.vue'
 
 export default {
   components: {
@@ -51,7 +56,8 @@ export default {
     AvatarComponent,
     BadgeComponent,
     ButtonComponent,
-    CardComponent
+    CardComponent,
+    ChipComponent
   },
 
   data() {
